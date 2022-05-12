@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind Play cdn -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- fontawsome -->
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        /> -->
+
+        <title>Tailwind | Class1, landing page</title>
+    </head>
+    <body>
+        <div
+            class="landing-page"
+            style="
+                background: linear-gradient(#4e5bcdbf, rgba(78, 91, 205, 0.75)),
+                    url(./assets/man-in-sky.jpg) top left no-repeat;
+                background-size: cover;
+                min-height: 100vh;
+            "
+        >
+            <!-- navbar -->
+            <nav class="pt-12 pb-28">
+                <div
+                    class="max-w-[95rem] my-0 mx-auto px-4 flex justify-between items-center"
+                >
+                    <div
+                        class="w-12 h-12 rounded-full flex justify-center items-center"
+                        style="background-color: #00ffd1"
+                    >
+                        <img
+                            src="./assets/unicorn.png"
+                            class="w-6 h-6"
+                            alt=""
+                        />
+                    </div>
+                    <nav>
+                        <ul
+                            class="text-white text-xl font-semibold flex space-x-20 items-center"
+                        >
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Features</a></li>
+                            <li><a href="/">Contact Us</a></li>
+                            <li><a href="/">Demo</a></li>
+                            <li
+                                class="py-3 px-12 border-2 border-white rounded"
+                            >
+                                <a href="/">Sign Up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+            <!-- Showcase -->
+            <section
+                class="flex flex-col justify-center items-center text-white text-center"
+            >
+                <h1 class="font-semibold text-7xl leading-snug max-w-3xl mb-8">
+                    Cool Landing Page Generator for Makers
+                </h1>
+
+                <p class="font-serif text-2xl max-w-3xl mb-20">
+                    Unicorn Platform is a powerful website builder for startups,
+                    solo entrepreneurs and hackers. Try it for free.
+                </p>
+
+                <form class="min-w-[750px] flex gap-6 text-xl mb-4">
+                    <input
+                        class="bg-blue-900/50 h-16 basis-9/12 px-8 rounded-md outline-none"
+                        type="email"
+                        placeholder="Enter your email"
+                    />
+                    <button
+                        class="bg-[#FF0067] basis-3/12 rounded-md flex justify-center items-center gap-4"
+                    >
+                        <p>Subscribe</p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 mt-2"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                        </svg>
+                    </button>
+                </form>
+
+                <p class="text-2xl mb-32">Why should I subscribe? 🤔</p>
+
+                <!-- companies -->
+                <div
+                    class="companies flex justify-center items-center gap-x-56 gap-y-8 flex-wrap"
+                >
+                    <img
+                        src="./assets/general-motors.png"
+                        alt="General Motors"
+                        class="w-14"
+                    />
+                    <img
+                        class="w-56"
+                        src="./assets/chrysler.png"
+                        alt="chrysler motors"
+                    />
+                    <img
+                        class="w-16"
+                        src="./assets//bmw.png"
+                        alt="BMW automobile"
+                    />
+                    <img class="w-36" src="./assets/porsche.png" alt="" />
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
